@@ -5,52 +5,46 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Embracell Company</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <header data-aos="fade-down">
-    <img src="logo.png" alt="Embracell Logo" class="logo" />
-    <h1>Embracell Company</h1>
-    <p>Assistência Técnica Especializada em Celulares</p>
-  </header>
+  <div class="container">
+    <header>
+      <img src="logo.png" alt="Embracell Company" class="logo" />
+      <div class="buttons">
+        <button class="secondary">Buscar OS</button>
+        <button class="primary">Solicitar orçamento</button>
+      </div>
+      <div class="unidade">
+        <label>Unidades:</label>
+        <select>
+          <option selected>São João da Canabrava - PI</option>
+          <option>Nova Unidade em breve...</option>
+        </select>
+      </div>
+    </header>
 
-  <section class="form-section" data-aos="fade-up">
-    <h2>Solicitar Orçamento</h2>
-    <form action="https://wa.me/5511931519489" method="get" target="_blank">
-      <input type="text" placeholder="Nome" required />
-      <input type="text" placeholder="Marca" required />
-      <input type="text" placeholder="Modelo" required />
-      <textarea placeholder="Descreva o defeito" required></textarea>
-      <button type="submit">Enviar para WhatsApp</button>
-    </form>
-  </section>
+    <section class="servicos">
+      <h2>Serviços</h2>
+      <div class="cards">
+        <div class="card">📱<span>Troca de Tela</span></div>
+        <div class="card">🔋<span>Troca de Bateria</span></div>
+        <div class="card">🔄<span>Atualização de Software</span></div>
+        <div class="card">🛠️<span>Assistência Técnica</span></div>
+      </div>
+    </section>
 
-  <section class="services-section" data-aos="fade-up">
-    <h2>Serviços Realizados</h2>
-    <div class="services">
-      <div class="service-card">Troca de Tela</div>
-      <div class="service-card">Substituição de Bateria</div>
-      <div class="service-card">Reparo em Conector de Carga</div>
-      <div class="service-card">Atualização de Software</div>
-      <div class="service-card">Desbloqueio de Aparelho</div>
-      <div class="service-card">Reparo em Botões</div>
-    </div>
-  </section>
-
-  <section class="os-section" data-aos="fade-up">
-    <h2>Consultar Ordem de Serviço</h2>
-    <input type="text" placeholder="Digite o código da OS" />
-    <button>Buscar</button>
-  </section>
-
-  <footer data-aos="fade-up">
-    <p>© 2025 Embracell Company</p>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    <section class="formulario">
+      <h2>Solicite um orçamento</h2>
+      <form action="https://wa.me/5511931519489" method="get" target="_blank">
+        <input type="text" placeholder="Nome" required />
+        <input type="text" placeholder="Telefone" required />
+        <input type="text" placeholder="Unidade" required />
+        <textarea placeholder="Serviço desejado" required></textarea>
+        <button type="submit">Enviar orçamento</button>
+      </form>
+    </section>
+  </div>
 </body>
 </html>
