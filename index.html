@@ -4,16 +4,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Embracell Company - Assistência Técnica</title>
+  <title>Embracell Company</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <header data-aos="fade-down">
-    <img src="logo.png" alt="Embracell Logo" class="logo" />
+    <img src="logo.png" alt="Logo Embracell" class="logo" />
     <h1>Embracell Company</h1>
-    <p>Assistência Técnica Inteligente</p>
+    <p>Assistência Técnica Especializada</p>
   </header>
 
   <section class="consulta-os" data-aos="fade-up">
@@ -23,9 +23,41 @@
     <p id="mensagemResultado" class="mensagem"></p>
   </section>
 
-  <section class="sobre" data-aos="fade-up">
-    <h2>Tecnologia e Confiança</h2>
-    <p>Estamos modernizando nosso sistema para oferecer a melhor experiência. Em breve, a consulta de OS será totalmente integrada ao nosso banco de dados em tempo real.</p>
+  <section class="unidade" data-aos="fade-up">
+    <h3>Selecione a Unidade</h3>
+    <select>
+      <option selected>São João da Canabrava - PI</option>
+      <option>Nova Unidade em breve...</option>
+    </select>
+  </section>
+
+  <section class="formulario" data-aos="fade-up">
+    <h2>Solicite um Orçamento</h2>
+    <form action="https://wa.me/5511931519489" method="get" target="_blank">
+      <input type="text" placeholder="Seu nome" required />
+      <input type="text" placeholder="Marca do aparelho" required />
+      <input type="text" placeholder="Modelo do aparelho" required />
+      <textarea placeholder="Descreva o defeito" required></textarea>
+      <button type="submit">Enviar para WhatsApp</button>
+    </form>
+  </section>
+
+  <section class="servicos" data-aos="fade-up">
+    <h2>Serviços que Oferecemos</h2>
+    <div class="cards">
+      <div class="card">📱<span>Troca de Tela</span></div>
+      <div class="card">🔋<span>Troca de Bateria</span></div>
+      <div class="card">🔌<span>Reparo de Conector</span></div>
+      <div class="card">🔄<span>Atualização de Software</span></div>
+      <div class="card">🔓<span>Desbloqueio</span></div>
+      <div class="card">🛠️<span>Outros Reparos</span></div>
+    </div>
+  </section>
+
+  <section class="contato" data-aos="fade-up">
+    <h2>Fale Conosco</h2>
+    <p><strong>Instagram:</strong> <a href="https://www.instagram.com/Embracell.Company" target="_blank">@Embracell.Company</a></p>
+    <p><strong>Endereço da Matriz:</strong> Rua João José Bezerra, 36, Centro - São João da Canabrava - PI</p>
   </section>
 
   <footer>
