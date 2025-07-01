@@ -4,44 +4,47 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Embracell Company</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <title>Embracell Company - Assistência Técnica</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <img src="logo.png" alt="Embracell Company" class="logo" />
-      <div class="unidade">
-        <label>Unidade:</label>
-        <select>
-          <option selected>São João da Canabrava - PI</option>
-          <option>Nova Unidade em breve...</option>
-        </select>
-      </div>
-    </header>
+  <header data-aos="fade-down">
+    <img src="logo.png" alt="Embracell Logo" class="logo" />
+    <h1>Embracell Company</h1>
+    <p>Assistência Técnica Inteligente</p>
+  </header>
 
-    <section class="servicos">
-      <h2>Serviços</h2>
-      <div class="cards">
-        <div class="card">📱<span>Troca de Tela</span></div>
-        <div class="card">🔋<span>Troca de Bateria</span></div>
-        <div class="card">🔌<span>Conector de Carga</span></div>
-        <div class="card">🔄<span>Atualização de Software</span></div>
-      </div>
-    </section>
+  <section class="consulta-os" data-aos="fade-up">
+    <h2>Consultar Ordem de Serviço</h2>
+    <input type="text" id="codigoOS" placeholder="Digite o código da OS" />
+    <button onclick="consultarOS()">Consultar</button>
+    <p id="mensagemResultado" class="mensagem"></p>
+  </section>
 
-    <section class="formulario">
-      <h2>Solicite um orçamento</h2>
-      <form action="https://wa.me/5511931519489" method="get" target="_blank">
-        <input type="text" placeholder="Nome" required />
-        <input type="text" placeholder="Telefone" required />
-        <input type="text" placeholder="Marca do aparelho" required />
-        <input type="text" placeholder="Modelo do aparelho" required />
-        <textarea placeholder="Descreva o problema" required></textarea>
-        <button type="submit">Enviar orçamento via WhatsApp</button>
-      </form>
-    </section>
-  </div>
+  <section class="sobre" data-aos="fade-up">
+    <h2>Tecnologia e Confiança</h2>
+    <p>Estamos modernizando nosso sistema para oferecer a melhor experiência. Em breve, a consulta de OS será totalmente integrada ao nosso banco de dados em tempo real.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Embracell Company</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    function consultarOS() {
+      const input = document.getElementById('codigoOS');
+      const mensagem = document.getElementById('mensagemResultado');
+      if (input.value.trim() === '') {
+        mensagem.innerText = "Por favor, digite um código válido.";
+      } else {
+        mensagem.innerText = "Ordem de Serviço não encontrada. Estamos atualizando nosso sistema.";
+      }
+    }
+  </script>
 </body>
 </html>
