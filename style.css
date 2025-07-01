@@ -8,8 +8,9 @@ body {
 }
 header {
   padding: 2em 1em;
-  background: #004aad;
-  color: white;
+  background: #ffffff;
+  color: #004aad;
+  border-bottom: 2px solid #004aad;
 }
 .logo {
   width: 140px;
